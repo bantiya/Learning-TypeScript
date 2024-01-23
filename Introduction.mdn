@@ -1,0 +1,17 @@
+############## TypeScript ###############3
+
+++++++++++++++++++++++++++++++++++ Advantages ++++++++++++++++++++++++++++++++++
+ * A JavaScript superset
+ * A language building upon JavaScript
+
+1. Types 
+2. Next-gen JavaScript Features(compiled down for older Browsers)
+3. Non-JavaScript Features like Interfaces or Generics
+4. Meta-Programming Features lioke Decorators
+5. Rich Configuration
+6. Mordern Tooling that helps even in non-TypeScript Projects
+
+++++++++++++++++++++++++++++++++++ DisAdvantages ++++++++++++++++++++++++++++++++++
+* Adds new features + Advantages to JavaScript
+* Browser can't execute it :- (converts to javascript and then runned by Browser)
+
