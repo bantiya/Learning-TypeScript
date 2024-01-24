@@ -27,10 +27,20 @@
  */
 
 
-let myVar: string | number; // Union type
+// +++++++++++++++++++++++++++++ Type Aliases +++++++++++++++++++++++++++++
+
+/**
+ * Type alias is a way to create a name for a type. It allows you to define complex types or combinations 
+ * of types with a single name, making your code more readable and maintainable. Type aliases are especially 
+ * useful when dealing with union types, intersection types, or custom types.
+ */
+type Combinable = string | number  // Type Aliases
+type ConversionDescriptor = 'as-number' | 'as-text' // Type Aliases
+
+
 //                                                       ( literal type {used specific values} )
-function combine(n1: number | string, n2:number | string, resultType: 'as-number' | 'as-text') {
-    let result : number | string;
+function combine(n1: Combinable, n2:Combinable, resultType: ConversionDescriptor) {
+    let result : Combinable;
     if((typeof n1 === 'number' && typeof n2 === 'number') || resultType === 'as-number') {
         result = +n1 + +n2;
     }
