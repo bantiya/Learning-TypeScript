@@ -18,3 +18,25 @@ const person = {
 }
 
 console.log(person.name);
+
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++ ENUMS +++++++++++++++++++++++++++++++++++++++++++++++++++
+/**
+ *  'Enum', or 'enumeration', is a way to define a set of named numeric values. 
+ * Enums provide a more readable way to work with constants and improve code maintainability. 
+ */
+
+// Direction is a numeric enum where each member is assigned a numeric value starting from 0. 
+// The variable heading is assigned the value Direction.East.
+
+enum Direction {
+    North,   // 0
+    East,    // 1
+    South,   // 2
+    West     // 3
+  }
+  
+  let heading: Direction = Direction.East;
+  console.log(heading); // Output: 1
+  
