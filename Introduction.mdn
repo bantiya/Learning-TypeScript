@@ -17,3 +17,28 @@ TypeScript are Statically typed where we declare each datatype while writing cod
 * Adds new features + Advantages to JavaScript
 * Browser can't execute it :- (converts to javascript and then runned by Browser)
 
+
+**************************************** Watch Mode ****************************************
+It typically refers to a feature in build tools or bundlers that monitors files for changes 
+    and automatically rebuilds the project whenever a change is detected.
+
+    tsc fileName.ts --w       <=== This will keep an eye on the file app.ts, & if there is any change it will compile and run it
+
+    tsc --init      <== Make a new tsconfig.json which can be used later to run all the 'ts' files to 'js'
+
+
+**************************************** exculde in tsconfig.json ****************************************
+This helps us to """exclude""" the '.ts' files in compilation that you do not want to convert into '.js'
+Node modules file is automatically excluded because it has 3rd party files that might hinder in the execution of our '.ts' files    
+    eg.... "exclude":["file1.ts","file2.ts"]
+
+
+**************************************** include in tsconfig.json ****************************************
+This helps us to """include""" the '.ts' files in compilation that you do not want to convert into '.js'
+    eg.... "include":["file1.ts","file2.ts"]
+
+
+**************************************** files in tsconfig.json ****************************************
+Basically same as 'includes' but here we cannot include a whole folder instead we can just include only specific 'files'  
+    eg.... "files":["file1.ts","file2.ts"]
+

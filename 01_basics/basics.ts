@@ -6,7 +6,7 @@ const person = {
     age : 54,
     hobby : ["Run", "laugh", "cry"],
     role : [101, "Bhavya Antiya"],
-    enum1 : {"Bablu", "Jimit"}
+    enum1 : {"Bablu": "Jimit"}
 }
 
 console.log(person.name);
